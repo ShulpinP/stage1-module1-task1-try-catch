@@ -26,7 +26,11 @@ public class ParseIntegers {
                         sum += number;
                     }
                     catch (NumberFormatException e1) {
-                        justWords.append(next).append(" ");
+                        justWords.append(next);
+                        if (words.hasNext()){
+                        justWords.append(" ");
+                        }
+
                     }
 
             }
